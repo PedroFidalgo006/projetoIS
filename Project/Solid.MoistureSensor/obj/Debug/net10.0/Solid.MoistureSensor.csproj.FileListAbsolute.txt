@@ -1,0 +1,15 @@
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/bin/Debug/net10.0/Solid.MoistureSensor
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/bin/Debug/net10.0/Solid.MoistureSensor.deps.json
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/bin/Debug/net10.0/Solid.MoistureSensor.runtimeconfig.json
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/bin/Debug/net10.0/Solid.MoistureSensor.dll
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/bin/Debug/net10.0/Solid.MoistureSensor.pdb
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/Solid.MoistureSensor.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/Solid.MoistureSensor.AssemblyInfoInputs.cache
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/Solid.MoistureSensor.AssemblyInfo.cs
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/Solid.MoistureSensor.csproj.CoreCompileInputs.cache
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/Solid.MoistureSensor.sourcelink.json
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/Solid.MoistureSensor.dll
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/refint/Solid.MoistureSensor.dll
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/Solid.MoistureSensor.pdb
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/Solid.MoistureSensor.genruntimeconfig.cache
+/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/Debug/net10.0/ref/Solid.MoistureSensor.dll
