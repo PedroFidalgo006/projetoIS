@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Solid.WaterValve")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c1a4445e846963bb524610fcb3ad8f955c2334")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+057daf8248cb7edf909601edc438b665cdb54093")]
 [assembly: System.Reflection.AssemblyProductAttribute("Solid.WaterValve")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Solid.WaterValve")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
