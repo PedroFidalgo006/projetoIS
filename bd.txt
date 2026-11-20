@@ -1,0 +1,42 @@
+Tabela Aplicacao
+Campo	Tipo SQL
+
+id	INTEGER (PK)
+tipo	TEXT
+name	TEXT
+descricao	TEXT
+data_criacao	TEXT
+
+Tabela Canal
+Campo	Tipo SQL
+
+id	INTEGER (PK)
+tipo	TEXT
+name	TEXT
+descricao	TEXT
+data_criacao	TEXT
+aplicacao_id	INTEGER (FK)
+
+Tabela DataRecord
+Campo	Tipo SQL
+
+id	INTEGER (PK)
+tipo	TEXT
+name	TEXT
+tipo_conteudo	TEXT
+conteudo	TEXT
+data_criacao	TEXT
+data_expiracao	TEXT
+canal_id	INTEGER (FK)
+
+Tabela Subscription
+Campo	Tipo SQL
+
+id	INTEGER (PK)
+tipo	TEXT
+name	TEXT
+evt	INTEGER
+endpoint	TEXT
+data_criacao	TEXT
+data_expiracao	TEXT
+canal_id	INTEGER (FK)

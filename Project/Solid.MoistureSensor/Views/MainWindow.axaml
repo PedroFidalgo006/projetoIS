@@ -3,11 +3,14 @@
         xmlns:vm="using:Solid.MoistureSensor.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="480"
         x:Class="Solid.MoistureSensor.Views.MainWindow"
         x:DataType="vm:MainViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Solid.MoistureSensor">
+        Title="SOLID - Moisture Sensor"
+        Width="700" Height="480"
+        MinWidth="600" MinHeight="420"
+        WindowStartupLocation="CenterScreen">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -15,8 +18,93 @@
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <TextBox Text="{Binding Greeting}"
-             HorizontalAlignment="Center"
-             VerticalAlignment="Center" />
+    <Grid RowDefinitions="Auto,*" Background="#F4F7FB">
+        <Border Grid.Row="0" Background="#16697A" Padding="24,18">
+            <StackPanel>
+                <TextBlock Text="MOISTURE SENSOR"
+                           Foreground="White"
+                           FontSize="22"
+                           FontWeight="SemiBold" />
+                <TextBlock Text="SOLID irrigation system"
+                           Foreground="#CDE7EC"
+                           Margin="0,4,0,0" />
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="1" ColumnDefinitions="*,240"
+              Margin="24">
+            <Border Grid.Column="0"
+                    Background="White"
+                    CornerRadius="12"
+                    Padding="32"
+                    Margin="0,0,16,0">
+                <Grid RowDefinitions="Auto,*,Auto">
+                    <TextBlock Text="Current humidity"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               Foreground="#455A64" />
+
+                    <StackPanel Grid.Row="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <TextBlock Text="{Binding Humidity, StringFormat={}{0}%}"
+                                   FontSize="72"
+                                   FontWeight="Bold"
+                                   Foreground="#16697A"
+                                   HorizontalAlignment="Center" />
+                        <ProgressBar Width="360"
+                                     Height="10"
+                                     Minimum="0"
+                                     Maximum="100"
+                                     Value="{Binding Humidity}"
+                                     Foreground="#48CAE4"
+                                     Margin="0,12,0,0" />
+                    </StackPanel>
+
+                    <TextBlock Grid.Row="2"
+                               Text="{Binding Status}"
+                               HorizontalAlignment="Center"
+                               Foreground="#607D8B" />
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="1"
+                    Background="White"
+                    CornerRadius="12"
+                    Padding="20">
+                <StackPanel Spacing="16">
+                    <TextBlock Text="Sensor control"
+                               FontSize="16"
+                               FontWeight="SemiBold" />
+
+                    <Button Command="{Binding ToggleSensorCommand}"
+                            Height="44"
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Center"
+                            Background="#2A9D8F"
+                            Foreground="White"
+                            CornerRadius="8">
+                        <TextBlock Text="{Binding SensorButtonText}" />
+                    </Button>
+
+                    <Border Height="1" Background="#E2E8F0" />
+
+                    <TextBlock Text="Last publication"
+                               Foreground="#607D8B" />
+                    <TextBlock Text="{Binding LastPublished}"
+                               FontSize="20"
+                               FontWeight="SemiBold" />
+
+                    <Border CornerRadius="8"
+                            Background="#F1F5F9"
+                            Padding="12">
+                        <TextBlock Text="{Binding ConnectionText}"
+                                   HorizontalAlignment="Center"
+                                   FontWeight="SemiBold" />
+                    </Border>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
 
 </Window>
