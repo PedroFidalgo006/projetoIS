@@ -3,11 +3,14 @@
         xmlns:vm="using:Solid.WaterValve.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="760" d:DesignHeight="520"
         x:Class="Solid.WaterValve.Views.MainWindow"
         x:DataType="vm:MainViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Solid.WaterValve">
+        Title="SOLID - Water Valve"
+        Width="760" Height="520"
+        MinWidth="680" MinHeight="460"
+        WindowStartupLocation="CenterScreen">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -15,8 +18,99 @@
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <TextBox Text="{Binding Greeting}"
-             HorizontalAlignment="Center"
-             VerticalAlignment="Center" />
+    <Grid RowDefinitions="Auto,*" Background="#F4F7FB">
+        <Border Grid.Row="0" Background="#315C78" Padding="24,18">
+            <StackPanel>
+                <TextBlock Text="WATER VALVE"
+                           Foreground="White"
+                           FontSize="22"
+                           FontWeight="SemiBold" />
+                <TextBlock Text="Automatic irrigation controller"
+                           Foreground="#D3E3EC"
+                           Margin="0,4,0,0" />
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="1" ColumnDefinitions="280,*" Margin="24">
+            <StackPanel Grid.Column="0" Spacing="16" Margin="0,0,16,0">
+                <Border Background="White" CornerRadius="12" Padding="20">
+                    <StackPanel Spacing="12">
+                        <TextBlock Text="Humidity threshold"
+                                   FontSize="16"
+                                   FontWeight="SemiBold" />
+                        <TextBlock Text="{Binding Threshold, StringFormat={}{0}%}"
+                                   FontSize="34"
+                                   FontWeight="Bold"
+                                   Foreground="#315C78"
+                                   HorizontalAlignment="Center" />
+                        <Slider Minimum="0"
+                                Maximum="100"
+                                Value="{Binding Threshold}"
+                                TickFrequency="10"
+                                IsSnapToTickEnabled="True" />
+                    </StackPanel>
+                </Border>
+
+                <Border Background="White" CornerRadius="12" Padding="20">
+                    <StackPanel Spacing="8">
+                        <TextBlock Text="Valve state"
+                                   Foreground="#607D8B" />
+                        <TextBlock Text="{Binding ValveState}"
+                                   FontSize="38"
+                                   FontWeight="Bold"
+                                   Foreground="{Binding ValveColor}" />
+                    </StackPanel>
+                </Border>
+
+                <Border Background="White" CornerRadius="12" Padding="20">
+                    <StackPanel Spacing="6">
+                        <TextBlock Text="Last notification"
+                                   Foreground="#607D8B" />
+                        <TextBlock Text="{Binding LastNotification}"
+                                   FontWeight="SemiBold"
+                                   TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Status}"
+                                   FontSize="12"
+                                   Foreground="#90A4AE" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <Border Grid.Column="1"
+                    Background="White"
+                    CornerRadius="12"
+                    Padding="20">
+                <Grid RowDefinitions="Auto,Auto,*">
+                    <TextBlock Text="Sensor notification"
+                               FontSize="16"
+                               FontWeight="SemiBold" />
+                    <TextBlock Grid.Row="1"
+                               Text="{Binding Humidity, StringFormat={}{0}%}"
+                               FontSize="64"
+                               FontWeight="Bold"
+                               Foreground="#315C78"
+                               HorizontalAlignment="Center"
+                               Margin="0,12,0,12" />
+
+                    <Grid Grid.Row="2" RowDefinitions="Auto,*">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <TextBlock Text="Notification history"
+                                       FontWeight="SemiBold"
+                                       Foreground="#455A64" />
+                            <Button Grid.Column="1"
+                                    Content="Clear"
+                                    Command="{Binding ClearNotificationsCommand}"
+                                    Padding="10,4" />
+                        </Grid>
+                        <ListBox Grid.Row="1"
+                                 ItemsSource="{Binding Notifications}"
+                                 Margin="0,8,0,0"
+                                 BorderThickness="0"
+                                 Background="Transparent" />
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
 
 </Window>
