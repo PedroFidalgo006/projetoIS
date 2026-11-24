@@ -1678,11 +1678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/Solid.MoistureSensor.csproj",
+      "projectUniqueName": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.MoistureSensor/Solid.MoistureSensor.csproj",
       "projectName": "Solid.MoistureSensor",
-      "projectPath": "/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/Solid.MoistureSensor.csproj",
+      "projectPath": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.MoistureSensor/Solid.MoistureSensor.csproj",
       "packagesPath": "/Users/pedrofidalgo/.nuget/packages/",
-      "outputPath": "/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/obj/",
+      "outputPath": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.MoistureSensor/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pedrofidalgo/.nuget/NuGet/NuGet.Config"

@@ -1678,11 +1678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.WaterValve/Solid.WaterValve.csproj",
+      "projectUniqueName": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.WaterValve/Solid.WaterValve.csproj",
       "projectName": "Solid.WaterValve",
-      "projectPath": "/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.WaterValve/Solid.WaterValve.csproj",
+      "projectPath": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.WaterValve/Solid.WaterValve.csproj",
       "packagesPath": "/Users/pedrofidalgo/.nuget/packages/",
-      "outputPath": "/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.WaterValve/obj/",
+      "outputPath": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.WaterValve/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pedrofidalgo/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,21 @@
+GET
+  /api/solid                              discovery (header solid-discovery) PAULO
+  /api/solid/{app}                        obter application / discovery. DANIEL
+  /api/solid/{app}/{ch}                   obter channel / discovery CRISTIANA
+  /api/solid/{app}/{ch}/{dr}              obter data-record / discovery (devolve []) PEDRO
+  /api/solid/{app}/{ch}/subs/{sub}        obter subscription / discovery (devolve []) PAULO
+
+POST
+  /api/solid                              criar application DANIEL
+  /api/solid/{app}                        criar channel CRISTIANA
+  /api/solid/{app}/{ch}                   criar data-record ou subscription (pelo res-type) PEDRO 
+
+PUT
+  /api/solid/{app}                        atualizar application DANIEL
+  /api/solid/{app}/{ch}                   atualizar channel CRISTIANA
+
+DELETE
+  /api/solid/{app}                        apagar application DANIEL
+  /api/solid/{app}/{ch}                   apagar channel CRISTIANA
+  /api/solid/{app}/{ch}/{dr}              apagar data-record PEDRO
+  /api/solid/{app}/{ch}/subs/{sub}        apagar subscription PAULO

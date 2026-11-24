@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WaYxkSfvMgY=",
+  "dgSpecHash": "mh5OqdCagq0=",
   "success": true,
-  "projectFilePath": "/Users/pedrofidalgo/Documents/projetoIS/Project/Solid.MoistureSensor/Solid.MoistureSensor.csproj",
+  "projectFilePath": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.MoistureSensor/Solid.MoistureSensor.csproj",
   "expectedPackageFiles": [
     "/Users/pedrofidalgo/.nuget/packages/avalonia/12.1.5/avalonia.12.1.5.nupkg.sha512",
     "/Users/pedrofidalgo/.nuget/packages/avalonia.angle.windows.natives/2.1.27548.20260419/avalonia.angle.windows.natives.2.1.27548.20260419.nupkg.sha512",
