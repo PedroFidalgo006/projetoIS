@@ -1673,19 +1673,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/pedrofidalgo/.nuget/packages/": {}
+    "C:\\Users\\Dalot\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.MoistureSensor/Solid.MoistureSensor.csproj",
+      "projectUniqueName": "C:\\Users\\Dalot\\Desktop\\ProjetoIS\\projetoIS\\Project\\Solid.MoistureSensor\\Solid.MoistureSensor.csproj",
       "projectName": "Solid.MoistureSensor",
-      "projectPath": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.MoistureSensor/Solid.MoistureSensor.csproj",
-      "packagesPath": "/Users/pedrofidalgo/.nuget/packages/",
-      "outputPath": "/Users/pedrofidalgo/Documents/projetoDad/projetoIS/Project/Solid.MoistureSensor/obj/",
+      "projectPath": "C:\\Users\\Dalot\\Desktop\\ProjetoIS\\projetoIS\\Project\\Solid.MoistureSensor\\Solid.MoistureSensor.csproj",
+      "packagesPath": "C:\\Users\\Dalot\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dalot\\Desktop\\ProjetoIS\\projetoIS\\Project\\Solid.MoistureSensor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/pedrofidalgo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Dalot\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -1758,7 +1758,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
